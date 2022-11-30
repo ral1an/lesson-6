@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function getResult(number1, number2, operation) {
+        switch (operation) {
+            case '+':
+                return (number1 + number2);
+            case '-':
+                return (number1 - number2);
+            case '*':
+                return (number1 * number2);
+            case '/':
+                return (number1 / number2);
+            case '**':
+                return (number1 ** number2);
+            default:
+                return NaN;
+        }
+    }
+
+    function isCharPresent(string, symbol, number) {
+        for (var i = number - 1; i <= string.length; i++) {
+            if (string[i] == symbol) return true;
+        }
+        return false;
+    }
+    
+    function charIndexOf(string, symbol, number) {
+        for (var i = number - 1; i <= string.length; i++) {
+            if (string[i] == symbol) return i + 1;
+        }
+        return -1;
+    }
+    </script>
+</body>
+</html>
